@@ -1,0 +1,91 @@
+<div style="width:100%;">
+  <p>${nls.disclaimer} <a href="${nls.disclaimerUrl}" target='_blank'>${nls.disclaimerUrl}</a></p>
+  <table class="setting-table input-table" cellspacing="0">
+    <tbody>
+        <tr>
+            <td class="first">${nls.type}</td>
+            <td class="second">
+                <select data-dojo-type="dijit/form/Select"
+                        data-dojo-props='style:{width:"200px"}, trim:true'
+                        data-dojo-attach-point="type">
+                    <option value="rank" selected="selected">Rank</option>
+                    <option value="ranktop3">Rank with Top 3 venues</option>
+                    <option value="ranktop6">Rank with Top 6 venues</option>
+                    <option value="ranktop12">Rank with Top 12 venues</option>
+                    <option value="ranktop1bycat">Rank with Top 1 venue or each category</option>
+
+                </select>
+            </td>
+            <td class="third">
+                <div class="help-icon"></div>
+            </td>
+        </tr>
+        <tr>
+            <td class="first">${nls.ln}</td>
+            <td class="second">
+                <input
+                        type="text"
+                        value = "en"
+                        data-dojo-type="dijit/form/TextBox"
+                        required="true"
+                        placeHolder="http://pre-m.avuxiapis.com"
+                        data-dojo-attach-point="ln"
+                        data-dojo-props='style:{width:"200px"}, trim:true'
+                />
+            </td>
+            <td class="third">
+                <div class="help-icon"></div>
+            </td>
+        </tr>
+       <tr>
+          <td class="first">${nls.apiurl}</td>
+          <td class="second">
+              <input
+                      type="text"
+                      value = "http://pre-m.avuxiapis.com"
+                      data-dojo-type="dijit/form/TextBox"
+                      required="true"
+                      placeHolder="http://pre-m.avuxiapis.com"
+                      data-dojo-attach-point="apiurl"
+                      data-dojo-props='style:{width:"200px"}, trim:true'
+              />
+          </td>
+          <td class="third">
+              <div class="help-icon"></div>
+          </td>
+      </tr>
+      <tr>
+        <td class="first">${nls.appId}</td>
+        <td class="second">
+          <input
+            type="text"
+            data-dojo-type="dijit/form/TextBox"
+            required="true"
+            placeHolder="xxxxxxxx"
+            data-dojo-attach-point="app_id"
+            data-dojo-props='style:{width:"200px"}, trim:true'
+          />
+        </td>
+        <td class="third">
+          <div class="help-icon"></div>
+        </td>
+      </tr>
+      <tr>
+        <td class="first">${nls.apiKey}</td>
+        <td class="second">
+          <input
+            type="text"
+            data-dojo-type="dijit/form/TextBox"
+            required="true"
+            placeHolder="xxxxxxxxxxxxxxxx"
+            data-dojo-attach-point="api_key"
+            data-dojo-props='style:{width:"300px"}, trim:true'
+          />
+        </td>
+        <td class="third">
+          <div class="help-icon"></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
